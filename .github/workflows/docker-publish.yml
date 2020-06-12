@@ -14,7 +14,6 @@ jobs:
   # Build and push image to docker hub.
   buildx:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
 
     steps:
       - uses: actions/checkout@v2
